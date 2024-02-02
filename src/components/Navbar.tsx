@@ -1,8 +1,11 @@
 import React from 'react'
+import { ModeToggle } from './toogleMode'
 
 const Navbar = () => {
   return (
-    <div>navbar</div>
+    <div>
+      <ModeToggle/>
+    </div>
   )
 }
 
