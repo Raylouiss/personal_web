@@ -19,6 +19,7 @@ const config = {
     },
     extend: {
       colors: {
+        text: "hsl(var(--text))",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
@@ -72,6 +73,10 @@ const config = {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
       },
+      fontFamily: {
+        marcellus: ["Marcellus", "sans-serif"],
+        mulish: ["Mulish", "sans-serif"],
+      }
     },
   },
   plugins: [require("tailwindcss-animate")],
