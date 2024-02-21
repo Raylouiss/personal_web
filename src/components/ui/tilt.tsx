@@ -22,7 +22,7 @@ const TiltComponent = () => {
         <Image
             src={ProfilePicture}
             alt='Profile Picture'
-            className='w-[350px] rounded-[10%] transition-all duration-300 cursor-pointer shadow-xl'
+            className='w-[350px] min-w-[200px] rounded-[10%] transition-all duration-300 cursor-pointer shadow-xl'
         />
       </div>
     </Tilt>

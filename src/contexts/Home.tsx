@@ -86,7 +86,7 @@ const Home = () => {
           ))}
         </div>
       </div>
-      <Image src={HeroImage} alt='HeroImage' width={700}/>
+      <Image src={HeroImage} alt='HeroImage' width={700} className='min-w-[400px]'/>
     </div>
   )
 }

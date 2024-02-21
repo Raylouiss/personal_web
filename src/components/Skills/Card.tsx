@@ -11,7 +11,7 @@ interface CardProps{
 const Card = ({ title, image, desc, tools} : CardProps): JSX.Element => {
   
   return (
-    <div className='w-[400px] h-auto flex flex-col border-[3px] px-10 py-10 mb-[50px] lg:mb-[0px]'>
+    <div className='max-w-[400px] h-auto flex flex-col border-[3px] px-10 py-10 mb-[50px] lg:mb-[0px]'>
         <div className='flex flex-row gap-5 items-center mb-5'>
             <i className={`fas ${image} text-foreground text-[50px]`}> </i>
             <h2 className='text-2xl font-bold'>{title}</h2>

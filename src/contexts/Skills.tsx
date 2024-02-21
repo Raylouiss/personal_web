@@ -14,7 +14,7 @@ const skills = [
         title: "Web Development",
         desc: "I have intermediate-level proficiency in web development, demonstrating excellence in both front-end and back-end development.",
         image: "fa-globe",
-        tools: ["HTML", "CSS", "TypeScript", "JavaScript", "Tailwind CSS", "Chakra UI", "React.js", "Next.js", "REST APIs", "SOAP", "Vercel", "Docker", "Azle"]
+        tools: ["HTML", "CSS", "TypeScript", "JavaScript", "PHP", "Tailwind CSS", "Chakra UI", "React.js", "Next.js", "Vercel", "Docker", "Azle"]
     },
     {
         title: "Software Development",
