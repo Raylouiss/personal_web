@@ -32,11 +32,11 @@ const MENU_LIST : Menu[] = [
 
 const Navbar = () => {
   return (
-    <div className='w-screen h-auto sticky'>
+    <div className='w-screen h-auto fixed z-50'>
       <div className='relative flex flex-row px-10 py-5 justify-between items-center gap-[10px]'>
         <div className='flex flex-col font-marcellus text-center'>
-          <a className='text-xl'>Raynard</a>
-          <a className='text-base'>Tanadi</a>
+          <a className='text-2xl'>Raynard</a>
+          <a className='text-xl'>Tanadi</a>
         </div>
         <div className='relative flex flex-row font-mulish items-center gap-[10px]'>
           {MENU_LIST.map((menu: Menu) => (
