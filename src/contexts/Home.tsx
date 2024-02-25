@@ -11,6 +11,7 @@ import Whatsapp from '@/components/Hero/Whatsapp'
 import HeroImage from '@/assets/images/hero.svg'
 import ParticlesComponent from '@/components/ui/particle'
 import { useTheme } from 'next-themes'
+import { scrollToSection } from '@/lib/scroll';
 
 interface ButtonProps {
   text: string
@@ -69,7 +70,9 @@ const Home = () => {
         <h1 className='text-lg mb-[20px] '>
           at Bandung Institute of Technology, Indonesia
         </h1>
-        <Button {...button}/>
+        <div onClick={() => scrollToSection('About')}>
+          <Button {...button}/>
+        </div>
         <div className='flex flex-row gap-5 mt-5'>
           {socialMedia.map((link, index)=> (
             <a

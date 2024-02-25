@@ -38,7 +38,7 @@ const skills = [
 const Skills = (): JSX.Element => {
 
   return (
-    <div className='w-screen h-auto flex flex-col font-marcellus justify-center items-center overflow-hidden px-20 py-20 mt-[120px]' id='Skills'>
+    <div className='w-screen h-auto flex flex-col font-marcellus justify-center items-center overflow-hidden px-20 py-[150px]' id='Skills'>
         <div className='text-center mb-[30px]'>
             <h2 className='text-xl'>
                 These are my

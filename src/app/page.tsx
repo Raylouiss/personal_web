@@ -3,6 +3,7 @@ import About from '@/contexts/About'
 import Home from '@/contexts/Home'
 import Projects from '@/contexts/Projects'
 import Skills from '@/contexts/Skills';
+import Experience from '@/contexts/Experience';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 
 
@@ -14,6 +15,7 @@ const Page = () => {
       <About/>
       <Skills />
       <Projects/>
+      <Experience/>
     </div>
   )
 }

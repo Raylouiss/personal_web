@@ -4,6 +4,7 @@ import React, { useEffect, useState } from 'react'
 import TiltComponent from '@/components/ui/tilt'
 import { useTheme } from 'next-themes'
 import Button from '@/components/Hero/Button'
+import Link from 'next/link'
 
 interface ButtonProps {
   text: string
@@ -31,7 +32,7 @@ const About = (): JSX.Element => {
   }
   
   return (
-    <div className='w-screen h-auto flex lg:flex-row flex-col justify-center items-center font-marcellus overflow-hidden px-[150px] py-10 gap-[50px] lg:gap-[150px] mt-[120px]' id='About' >
+    <div className='w-screen h-auto flex lg:flex-row flex-col justify-center items-center font-marcellus overflow-hidden px-[150px] py-[150px] gap-[50px] lg:gap-[150px]' id='About' >
       <TiltComponent />
       <div className='flex flex-col justify-center items-center  lg:items-start lg:justify-start lg:text-start text-center gap-5'>
         <h1 className='font-bold text-[50px]'>
@@ -46,7 +47,9 @@ const About = (): JSX.Element => {
             I consistently seek opportunities to develop my soft and hard skills through internships, competitions, volunteering, and projects.
           </h2>
         </div>
-        <Button {...button}/>
+        <Link href={"https://drive.google.com/file/d/1jkdodecFlquQBEKeoUdgi_Dng4BDcmxQ/view?usp=sharing"}>
+          <Button {...button}/>
+        </Link>
       </div>
     </div>
   )
