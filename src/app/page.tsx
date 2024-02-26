@@ -5,6 +5,7 @@ import Projects from '@/contexts/Projects'
 import Skills from '@/contexts/Skills';
 import Experience from '@/contexts/Experience';
 import '@fortawesome/fontawesome-free/css/all.min.css';
+import Contact from '@/contexts/Contact';
 
 
 const Page = () => {
@@ -16,6 +17,7 @@ const Page = () => {
       <Skills />
       <Projects/>
       <Experience/>
+      <Contact/>
     </div>
   )
 }

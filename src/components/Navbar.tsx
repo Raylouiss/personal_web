@@ -1,5 +1,5 @@
 "use client"
-import React from 'react'
+import React, { useState } from 'react'
 import { ToggleMode } from './toggleMode'
 import { scrollToSection } from '@/lib/scroll';
 
@@ -36,7 +36,10 @@ const MENU_LIST : Menu[] = [
 ];
 
 
-const Navbar = () => {
+const Navbar = (): JSX.Element => {
+
+  const [isOpened, setIsOpened] = useState(false)
+
   return (
     <div className='w-screen h-auto fixed z-50'>
       <div className='relative flex flex-row px-10 py-5 justify-between items-center gap-[10px]'>
@@ -45,13 +48,28 @@ const Navbar = () => {
           <a className='text-xl'>Tanadi</a>
         </div>
         <div className='block md:hidden'>
-          <i className='fas fa-bars scale-150 mr-[20px]'></i>
+          <i className='fas fa-bars scale-150 cursor-pointer' onClick={() => setIsOpened(!isOpened)}></i>
+        </div>
+        <div className={`flex items-center bg-gray-400 bg-opacity-30 justify-center font-mulish overflow-hidden lg:hidden top-0 left-0 fixed w-full h-full z-[60] backdrop-blur ${isOpened ? 'translate-x-0' : '-translate-x-full '} `}>
+        <i className='absolute top-0 right-0 fas fa-x scale-150 cursor-pointer p-5' onClick={() => setIsOpened(!isOpened)}></i>
+          <div className='flex flex-col justify-center items-center'>
+            {MENU_LIST.map((menu: Menu) => (
+              <div
+                key={menu.text}
+                className='cursor-pointer hover:text-secondary mb-[20px]'
+                onClick={()=> scrollToSection(menu.section)}
+              >
+                <div className='px-3 text-xl font-bold' onClick={() => setIsOpened(!isOpened)}>{menu.text}</div>
+              </div>
+            ))}
+            <ToggleMode/>
+          </div>
         </div>
         <div className='relative md:flex flex-row hidden font-mulish items-center gap-[10px]'>
           {MENU_LIST.map((menu: Menu) => (
             <div 
               key={menu.text}
-              className='cursor-pointer duration-300 hover:text-secondary'
+              className='cursor-pointer hover:text-secondary'
               onClick={()=> scrollToSection(menu.section)}
             >
               <div className='px-3 text-base'>{menu.text}</div>

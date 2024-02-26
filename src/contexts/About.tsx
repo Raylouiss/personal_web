@@ -32,7 +32,7 @@ const About = (): JSX.Element => {
   }
   
   return (
-    <div className='w-screen h-auto flex lg:flex-row flex-col justify-center items-center font-marcellus overflow-hidden px-[150px] py-[150px] gap-[50px] lg:gap-[150px]' id='About' >
+    <div className='w-screen h-auto flex lg:flex-row flex-col justify-center items-center font-marcellus overflow-hidden px-[150px] py-[150px] gap-[50px] lg:gap-[150px] z-50' id='About' >
       <TiltComponent />
       <div className='flex flex-col justify-center items-center  lg:items-start lg:justify-start lg:text-start text-center gap-5'>
         <h1 className='font-bold text-[50px]'>

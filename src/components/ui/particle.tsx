@@ -28,10 +28,13 @@ const ParticlesComponent = () => {
     return (
         <Particles
             id="tsparticles"
-            className="z-0"
             init={particlesInit}
             loaded={particlesLoaded}
             options={{
+                "fullScreen": {
+                    "enable":true,
+                    "zIndex":-1
+                },
                 fpsLimit: 120,
                 interactivity: {
                     events: {

@@ -22,7 +22,7 @@ const projects = [
     github: "aaaaaaaaaa"
   },
   {
-    name: "Lottereum",
+    name: "Nutribuddies",
     desc: "I have intermediate-level proficiency in web development, demonstrating excellence in both front-end and back-end development.",
     thumbnail: ProfilePicture,
     tools: ["Python", "Pandas", "Tensorflow", "Langchain", "Huggingface"],
@@ -30,7 +30,7 @@ const projects = [
     github: "aaaaaaaaaa"
   },
   {
-    name: "Lottereum",
+    name: "DermaticaAI",
     desc: "Ini adalah Lottereum",
     thumbnail: ProfilePicture,
     tools: ["Python", "Pandas", "Tensorflow", "Langchain", "Huggingface"],
@@ -38,7 +38,7 @@ const projects = [
     github: "aaaaaaaaaa"
   },
   {
-    name: "Lottereum",
+    name: "SRE ITB",
     desc: "Ini adalah Lottereum",
     thumbnail: ProfilePicture,
     tools: ["Python", "Pandas", "Tensorflow", "Langchain", "Huggingface"],
@@ -46,7 +46,31 @@ const projects = [
     github: "aaaaaaaaaa"
   },
   {
-    name: "Lottereum",
+    name: "Wispril ITB",
+    desc: "Ini adalah Lottereum",
+    thumbnail: ProfilePicture,
+    tools: ["Python", "Pandas", "Tensorflow", "Langchain", "Huggingface"],
+    link: "aaaaaaaaaa",
+    github: "aaaaaaaaaa"
+  },
+  {
+    name: "AFOLU Dashboard",
+    desc: "Ini adalah Lottereum",
+    thumbnail: ProfilePicture,
+    tools: ["Python", "Pandas", "Tensorflow", "Langchain", "Huggingface"],
+    link: "aaaaaaaaaa",
+    github: "aaaaaaaaaa"
+  },
+  {
+    name: "Rechefy",
+    desc: "Ini adalah Lottereum",
+    thumbnail: ProfilePicture,
+    tools: ["Python", "Pandas", "Tensorflow", "Langchain", "Huggingface"],
+    link: "aaaaaaaaaa",
+    github: "aaaaaaaaaa"
+  },
+  {
+    name: "Binotify",
     desc: "Ini adalah Lottereum",
     thumbnail: ProfilePicture,
     tools: ["Python", "Pandas", "Tensorflow", "Langchain", "Huggingface"],
