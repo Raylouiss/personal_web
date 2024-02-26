@@ -59,7 +59,7 @@ const Navbar = (): JSX.Element => {
                 className='cursor-pointer hover:text-secondary mb-[20px]'
                 onClick={()=> scrollToSection(menu.section)}
               >
-                <div className='px-3 text-xl font-bold' onClick={() => setIsOpened(!isOpened)}>{menu.text}</div>
+                <div className='px-3 text-2xl font-bold' onClick={() => setIsOpened(!isOpened)}>{menu.text}</div>
               </div>
             ))}
             <ToggleMode/>
