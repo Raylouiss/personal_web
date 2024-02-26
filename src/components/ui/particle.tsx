@@ -47,7 +47,7 @@ const ParticlesComponent = () => {
                     },
                     modes: {
                         push: {
-                            quantity: 4,
+                            quantity: 2,
                         },
                         repulse: {
                             distance: 100,
@@ -73,7 +73,7 @@ const ParticlesComponent = () => {
                             default: "bounce",
                         },
                         random: false,
-                        speed: 4,
+                        speed: 3,
                         straight: false,
                     },
                     number: {
@@ -84,7 +84,7 @@ const ParticlesComponent = () => {
                         value: 50,
                     },
                     opacity: {
-                        value: 0.5,
+                        value: 0.4,
                     },
                     shape: {
                         type: "circle",

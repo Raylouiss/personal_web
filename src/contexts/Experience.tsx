@@ -32,10 +32,10 @@ const Experience = (): JSX.Element => {
         </div>
         <div className="flex flex-col grid-cols-9 p-2 md:grid">
             <div className="flex md:contents flex-row-reverse">
-                <div className="relative p-4 my-6 min-w-[300px] text-background bg-foreground rounded-xl col-start-1 col-end-5 mr-auto md:mr-0 md:ml-auto">
+                <div className="relative p-4 my-6 text-background bg-foreground rounded-xl col-start-1 col-end-5 mr-auto md:mr-0 md:ml-auto">
                     <h3 className="text-lg font-semibold lg:text-xl">Junior IT Consultant | Internship (Full-Time)</h3>
-                    <p className="mt-2 leading-6">deskripsi</p>
-                    <p className="mt-2 leading-6 font-medium">Sharing Vision Indonesia</p>
+                    <p className="mt-2 leading-6">I excel in Data Science & AI, consistently demonstrating excellence in leveraging analytical techniques and artificial intelligence to derive valuable insights and solve complex problems.</p>
+                    <p className="mt-2 leading-6 font-semibold">Sharing Vision Indonesia</p>
                     <span className="absolute text-sm font-semibold text-foreground -top-8 left-1 whitespace-nowrap">June 2023 - September 2023</span>
                 </div>
                 <div className="relative col-start-5 col-end-6 mr-7 md:mx-auto">
@@ -56,8 +56,8 @@ const Experience = (): JSX.Element => {
                 </div>
                 <div className="relative p-4 my-6 text-background bg-foreground rounded-xl col-start-6 col-end-10 mr-auto">
                     <h3 className="text-lg font-semibold lg:text-xl">Junior IT Consultant | Internship (Part-Time)</h3>
-                    <p className="mt-2 leading-6">deskripsi</p>
-                    <p className="mt-2 leading-6 font-medium">Sharing Vision Indonesia</p>
+                    <p className="mt-2 leading-6">I excel in Data Science & AI, consistently demonstrating excellence in leveraging analytical techniques and artificial intelligence to derive valuable insights and solve complex problems.</p>
+                    <p className="mt-2 leading-6 font-semibold">Sharing Vision Indonesia</p>
                     <span className="absolute text-sm font-semibold text-foreground -top-8 left-1 whitespace-nowrap">October 2023 - January 2024</span>
                 </div>
             </div>
