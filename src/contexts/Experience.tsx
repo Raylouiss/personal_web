@@ -32,7 +32,7 @@ const Experience = (): JSX.Element => {
         </div>
         <div className="flex flex-col grid-cols-9 p-2 md:grid">
             <div className="flex md:contents flex-row-reverse">
-                <div className="relative min-w-[300px] sm:min-w-[0px] p-4 my-6 text-background bg-foreground rounded-xl col-start-1 col-end-5 mr-auto md:mr-0 md:ml-auto">
+                <div className="relative min-w-[250px] sm:min-w-[0px] p-4 my-6 text-background bg-foreground rounded-xl col-start-1 col-end-5 mr-auto md:mr-0 md:ml-auto">
                     <h3 className="text-base sm:text-lg font-semibold lg:text-xl">Junior IT Consultant | Internship (Full-Time)</h3>
                     <p className="mt-2 leading-6 text-sm sm:text-base">I excel in Data Science & AI, consistently demonstrating excellence in leveraging analytical techniques and artificial intelligence to derive valuable insights and solve complex problems.</p>
                     <p className="mt-2 leading-6 font-semibold text-sm sm:text-base">Sharing Vision Indonesia</p>
