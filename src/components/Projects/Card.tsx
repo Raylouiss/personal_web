@@ -68,7 +68,7 @@ const Card = ({ name, thumbnail, desc, tools, github, link }: CardProps): JSX.El
             layout='fill'
             objectFit='cover'
             placeholder='blur'
-            className={`max-h-[350px] max-w-[400px] ${showDetails ? 'opacity-10' : 'opacity-100'} ` }
+            className={` ${showDetails ? 'opacity-10' : 'opacity-100'} ` }
         />
          <div className='absolute bottom-0 min-h-[50px] bg-foreground w-full flex justify-center items-center'>
             <h3 className='text-background font-bold text-xl'>
@@ -81,7 +81,7 @@ const Card = ({ name, thumbnail, desc, tools, github, link }: CardProps): JSX.El
             </div>
             <div className='flex flex-row mt-3 mb-3'>
                 <div className='w-[1px] h-full'></div>
-                <h3 className='text-md'>
+                <h3 className='text-md text-justify'>
                     {desc}
                 </h3>
             </div>

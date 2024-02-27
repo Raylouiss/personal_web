@@ -1,5 +1,5 @@
 "use client"
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { ToggleMode } from './toggleMode'
 import { scrollToSection } from '@/lib/scroll';
 
@@ -39,10 +39,23 @@ const MENU_LIST : Menu[] = [
 const Navbar = (): JSX.Element => {
 
   const [isOpened, setIsOpened] = useState(false)
+  const [isNavbarSolid, setIsNavbarSolid] = useState(false)
+  
+  useEffect(() => {
+  const handleScroll = (): void => {
+    setIsNavbarSolid(window.scrollY > 0);
+  }
+
+  window.addEventListener('scroll', handleScroll);
+
+  return () => {
+    window.removeEventListener('scroll', handleScroll);
+  };
+}, []);
 
   return (
     <div className='w-screen h-auto fixed z-50'>
-      <div className='relative flex flex-row px-10 py-5 justify-between items-center gap-[10px]'>
+      <div className={`relative flex flex-row px-10 pt-5 pb-2 justify-between items-center gap-[10px] ${isNavbarSolid ? 'backdrop-blur' : ''} `}>
         <div className='flex flex-col font-marcellus text-center'>
           <a className='text-2xl'>Raynard</a>
           <a className='text-xl'>Tanadi</a>
