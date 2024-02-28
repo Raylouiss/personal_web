@@ -18,8 +18,6 @@ interface CardProps {
 interface ButtonProps {
     text: string
     icon_name: string
-    height: string
-    width: string
 }
 
 const buttonCode: ButtonProps = {
