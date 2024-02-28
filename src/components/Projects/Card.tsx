@@ -3,7 +3,7 @@
 import Image from 'next/image'
 import { StaticImageData } from 'next/image'
 import React, { useEffect, useState } from 'react'
-import Button from '@/components/Hero/Button'
+import Button from '@/components/Projects/Button'
 import Link from 'next/link'
 
 interface CardProps {
@@ -25,15 +25,11 @@ interface ButtonProps {
 const buttonCode: ButtonProps = {
     text: "View Code",
     icon_name: "fa-code",
-    height: "h-[25px]",
-    width: "w-[150px]"
 }
 
 const buttonView: ButtonProps = {
     text: "View Project",
     icon_name: "fa-eye",
-    height: "h-[25px]",
-    width: "w-[150px]"
 }
 
 const Card = ({ name, thumbnail, desc, tools, github, link }: CardProps): JSX.Element => {
@@ -76,20 +72,20 @@ const Card = ({ name, thumbnail, desc, tools, github, link }: CardProps): JSX.El
             </h3>
         </div>
         <div className={`relative flex flex-col w-full h-auto items-start px-10 py-10 cursor-pointer ${showDetails ? 'opacity-80' : 'opacity-0'}`}>
-            <div className='flex items-center mb-5 mt-[-50px]'>
-                <h2 className='text-2xl font-bold'>{name}</h2>
+            <div className='flex items-center mb-2 sm:mb-5 mt-[-50px]'>
+                <h2 className='text-lg sm:text-2xl font-bold'>{name}</h2>
             </div>
-            <div className='flex flex-row mt-3 mb-3'>
+            <div className='flex flex-row mb-2 sm:mt-3 sm:mb-3'>
                 <div className='w-[1px] h-full'></div>
-                <h3 className='text-md text-justify'>
+                <h3 className='text-xs sm:text-base text-justify'>
                     {desc}
                 </h3>
             </div>
-            <div className='flex flex-wrap mt-3 mb-5'>
+            <div className='flex flex-wrap sm:mt-3 sm:mb-5 mb-2'>
                 {tools.map((tool, index) => (
                     <h4
                         key={index}
-                        className='px-3 py-1 rounded-[10px] text-sm font-semibold mr-2 mb-2 hover:translate-y-[-4px] bg-foreground text-background'
+                        className='px-3 py-1 rounded-[10px] text-xs sm:text-sm font-semibold mr-2 mb-2 hover:translate-y-[-4px] bg-foreground text-background'
                     >
                         {tool}
                     </h4>

@@ -80,7 +80,7 @@ const projects = [
 const Projects = (): JSX.Element => {
 
   return (
-    <div className='h-screen w-screen flex flex-col font-marcellus justify-center items-center overflow-hidden py-[150px]' id='Projects'>
+    <div className='h-auto w-screen flex flex-col font-marcellus justify-center items-center overflow-hidden py-[150px]' id='Projects'>
       <div className='text-center mb-[30px]'>
           <h2 className='text-xl'>
               Take a look at
