@@ -42,25 +42,29 @@ const Navbar = (): JSX.Element => {
   const [isNavbarSolid, setIsNavbarSolid] = useState(false)
   
   useEffect(() => {
-  const handleScroll = (): void => {
-    setIsNavbarSolid(window.scrollY > 0);
-  }
+    const handleScroll = (): void => {
+      if (window.scrollY !== 0) {
+        setIsNavbarSolid(true)
+      } else {
+        setIsNavbarSolid(false)
+      }
+    }
 
-  window.addEventListener('scroll', handleScroll);
+    window.addEventListener('scroll', handleScroll)
 
-  return () => {
-    window.removeEventListener('scroll', handleScroll);
-  };
-}, []);
+    return () => {
+      window.removeEventListener('scroll', handleScroll)
+    }
+  }, [])
 
   return (
-    <div className='w-screen h-auto fixed z-50'>
-      <div className={`relative flex flex-row px-10 pt-5 pb-2 justify-between items-center gap-[10px] ${isNavbarSolid ? 'backdrop-blur' : ''} `}>
+    <div className={`w-screen fixed z-50 ${isNavbarSolid ? 'backdrop-blur' : ''} ${isOpened ? 'h-screen' : 'h-auto'}`}>
+      <div className='relative flex flex-row px-10 pt-5 pb-2 justify-between items-center gap-[10px]'>
         <div className='flex flex-col font-marcellus text-center'>
           <a className='text-2xl'>Raynard</a>
           <a className='text-xl'>Tanadi</a>
         </div>
-        <div className='block md:hidden'>
+        <div className={`block md:hidden ${isOpened ? 'hidden' : 'block'}`}>
           <i className='fas fa-bars scale-150 cursor-pointer' onClick={() => setIsOpened(!isOpened)}></i>
         </div>
         <div className={`flex items-center bg-gray-400 bg-opacity-30 justify-center font-mulish overflow-hidden lg:hidden top-0 left-0 fixed w-full h-full z-[60] backdrop-blur ${isOpened ? 'translate-x-0' : '-translate-x-full '} `}>

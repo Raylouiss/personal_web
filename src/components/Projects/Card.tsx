@@ -58,7 +58,7 @@ const Card = ({ name, thumbnail, desc, tools, github, link }: CardProps): JSX.El
   }, [onHover])
   
   return (
-    <div className='relative flex flex-col justify-center items-center overflow-hidden font-marcellus scale-95 hover:scale-100 min-h-[400px] min-w-[400px] rounded-2xl'
+    <div className='relative flex flex-col justify-center items-center overflow-hidden font-marcellus scale-95 hover:scale-100 min-h-[400px] max-w-[400px] rounded-2xl'
     onMouseEnter={()=> setOnHover(true)}
     onMouseLeave={()=> {setTimeout(()=> setOnHover(false), 300); setShowDetails(false);}}
     >

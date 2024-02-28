@@ -97,7 +97,7 @@ const Projects = (): JSX.Element => {
       >
         <CarouselContent>
           {projects.map((project, index)=>(
-            <CarouselItem key={index} className="flex flex-row justify-center items-center lg:basis-1/2 2xl:basis-1/3">
+            <CarouselItem key={index} className="flex flex-row justify-center items-center lg:basis-1/2  2xl:basis-1/3">
               <div
                   key={index}
                   className='flex flex-row justify-center'
