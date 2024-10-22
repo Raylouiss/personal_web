@@ -40,7 +40,7 @@ const About = (): JSX.Element => {
         </h1>
         <div className='text-xl mb-[20px]'>
           <h2>
-            Currently in my 6th semester and interested in computer-related things such as software engineering, data, and AI.
+            Currently in my 7th semester and interested in computer-related things such as software engineering, data, and AI.
           </h2>
           <br/>
           <h2>
