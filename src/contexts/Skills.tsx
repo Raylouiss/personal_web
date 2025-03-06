@@ -8,13 +8,13 @@ const skills = [
         title: "Data Science & AI",
         desc: "I excel in Data Science & AI, consistently demonstrating excellence in leveraging analytical techniques and artificial intelligence to derive valuable insights and solve complex problems.",
         image: "fa-brain",
-        tools: ["Python", "Pandas", "Tensorflow", "Langchain", "Huggingface"]
+        tools: ["Python", "Pandas", "Tensorflow", "Langchain", "Huggingface", "Langgraph", "Langsmith", "PaddleOCR", "VertexAI", "SHAP", "LIME"]
     },
     {
         title: "Web Development",
         desc: "I have intermediate-level proficiency in web development, demonstrating excellence in both front-end and back-end development.",
         image: "fa-globe",
-        tools: ["HTML", "CSS", "TypeScript", "JavaScript", "PHP", "Tailwind CSS", "Chakra UI", "React.js", "Next.js", "Vercel", "Docker", "Azle"]
+        tools: ["HTML", "CSS", "TypeScript", "JavaScript", "PHP", "Tailwind CSS", "Chakra UI", "React.js", "Next.js", "Vercel", "Docker", "Azle", "GCP"]
     },
     {
         title: "Software Development",
@@ -32,7 +32,7 @@ const skills = [
         title: "Mobile Development",
         desc: "I am a novice in mobile development, actively acquiring foundational skills to create basic mobile applications and exploring diverse platforms and frameworks to broaden my knowledge in the field.",
         image: "fa-mobile-alt",
-        tools: ["Flutter", "Firebase"]
+        tools: ["Flutter", "Firebase", "Kotlin"]
     }
 ]
 const Skills = (): JSX.Element => {

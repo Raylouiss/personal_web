@@ -17,7 +17,7 @@ const Page = () => {
       <Skills />
       <Projects/>
       <Experience/>
-      <Contact/>
+      {/* <Contact/> */}
     </div>
   )
 }

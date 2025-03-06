@@ -3,6 +3,8 @@
 import React from 'react'
 import Card from '@/components/Projects/Card'
 import ProfilePicture from '@/assets/images/about.jpg'
+import CulinAIry from '@/assets/images/CulinAIry.jpg'
+import Flood from '@/assets/images/flood.jpg'
 import Lottereum from '@/assets/images/Lottereum.png'
 import Nutribuddies from '@/assets/images/Nutribuddies.png'
 import DermaticaAI from '@/assets/images/DermaticaAI.png'
@@ -19,6 +21,22 @@ import {
 } from '@/components/ui/carousel'
 
 const projects = [
+  {
+    name: "CulinAIry",
+    desc: " A mobile app for AI-powered financial management, featuring OCR-based handwritten invoice extraction and revenue forecasting using.",
+    thumbnail: CulinAIry,
+    tools: ["TensorFlow", "PaddleOCR", "VertexAI"],
+    link: "https://drive.google.com/file/d/1Kau0EIxpHK-9gmkNSle7gV8Cvv8kWS96/view?usp=sharing",
+    github: ""
+  },
+  {
+    name: "Flood Prediction for the Jakarta Region",
+    desc: "A flood prediction model using 7 years of Jakarta's weather data. Combined Random Forest, XGBoost, and CatBoost in a Voting Classifier, achieving 83% F1 score for accurate forecasting. ",
+    thumbnail: Flood,
+    tools: ["TensorFlow"],
+    link: "https://drive.google.com/file/d/1VLEnqMydnpUK6Ex1py_suaAP668WqWJe/view?usp=sharing",
+    github: ""
+  },
   {
     name: "Lottereum",
     desc: "An innovative giveaway system integrating blockchain technology; provided a secure, reliable, and transparent platform, revolutionizing the web3 ecosystem",

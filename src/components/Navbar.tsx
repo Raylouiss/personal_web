@@ -29,10 +29,10 @@ const MENU_LIST : Menu[] = [
     text:'Experiences',
     section: 'Experiences'
   },
-  {
-    text:'Contact',
-    section: 'Contact'
-  },
+  // {
+  //   text:'Contact',
+  //   section: 'Contact'
+  // },
 ];
 
 

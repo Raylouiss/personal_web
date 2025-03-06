@@ -40,14 +40,14 @@ const About = (): JSX.Element => {
         </h1>
         <div className='text-xl mb-[20px]'>
           <h2>
-            Currently in my 6th semester and interested in computer-related things such as software engineering, data, and AI.
+            Currently in my 8th semester and interested in computer-related things such as data analytics, data science, AI, and machine learning.
           </h2>
           <br/>
           <h2>
             I consistently seek opportunities to develop my soft and hard skills through internships, competitions, volunteering, and projects.
           </h2>
         </div>
-        <Link href={"https://drive.google.com/file/d/1jkdodecFlquQBEKeoUdgi_Dng4BDcmxQ/view?usp=sharing"}>
+        <Link href={"https://drive.google.com/file/d/1qQDn1Nr989PUOhEl9AdzptV0kbb-Sn3U/view?usp=sharing"}>
           <Button {...button}/>
         </Link>
       </div>

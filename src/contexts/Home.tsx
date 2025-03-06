@@ -51,10 +51,6 @@ const Home = () => {
       href: "mailto:sebastianraynard@gmail.com",
       icon: <Email width={40} height={40}/>
     },
-    {
-      href: "https://wa.me/6281906100919",
-      icon: <Whatsapp width={40} height={40}/>
-    },
   ]
 
   return (
